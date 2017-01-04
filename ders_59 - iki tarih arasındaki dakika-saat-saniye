@@ -1,0 +1,23 @@
+//iki tarih arasındaki dakika-saat-saniye hesaplama
+
+<?php
+
+  $tarih_1 ="1997-04-24";
+  $tarih_2 ="2016-12-15";
+  $tarih1 = strtotime($tarih_1);
+  $tarih2 = strtotime($tarih_2);
+
+
+  $gunfarki = ($tarih2-$tarih1)/86400 ;
+  $saatfarki = ($tarih2-$tarih1)/3600 ;
+  $dakikafarki = ($tarih2-$tarih1)/60 ;
+  $saniyefarki = ($tarih2-$tarih1)/1 ;
+
+  echo "<b>Girdiğiniz tarih aralığı:</b> $tarih_1  -  $tarih_2 <br>
+        <b>Girdiğiniz tarihler arasındaki gün sayısı: </b>".round($gunfarki).
+        "<br><b>Girdiğiniz tarihler arasındaki saat sayısı: </b>".round($saatfarki).
+        "<br><b>Girdiğiniz tarihler arasındaki dakika sayısı: </b></b>".round($dakikafarki).
+        "<br><b>Girdiğiniz tarihler arasındaki saniye sayısı: </b></b></b>".round($saniyefarki).
+        "<br><b>Bitiş tarihi dahil edildiğinde aradaki gün sayısı (+1 gün):</b>".round($gunfarki+1);
+
+ ?>
