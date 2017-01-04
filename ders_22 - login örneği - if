@@ -1,0 +1,11 @@
+//modül kullanarak if sistemi yaptık tek sayı bulma
+
+<?php
+
+$sayi = 98;
+$kontrol = $sayi%2;
+if ($sayi > 10 and $kontrol ==1 ) {
+echo "$sayi tek bir sayıdır. Havuza dahil edilmiştir.";
+}
+
+?>
