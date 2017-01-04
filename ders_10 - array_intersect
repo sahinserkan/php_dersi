@@ -1,0 +1,7 @@
+//dizideki aynı elmanı bulma
+
+	$sepetteki_urunler = array("Kamera","Telefon","PC");
+	$satinalinan_urunler = array("Kamera","şarj Aleti","PC");
+	$daha_once_aldiklarim = array_intersect ($sepetteki_urunler,$satinalinan_urunler);
+	
+	print_r($daha_once_aldiklarim);
