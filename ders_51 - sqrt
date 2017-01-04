@@ -1,4 +1,4 @@
-sqrt (karekök bulma)
+//sqrt (karekök bulma)
 
   $y = 25;
   echo sqrt($y);
