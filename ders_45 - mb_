@@ -1,0 +1,9 @@
+//mb_(türkçe karakter satırlarında kodun önüne mb_ koyunca türkçe karakter hatası vermiyor
+
+  $isim = "Kadıköy üniversitesi<br />";
+
+  echo mb_strtoupper($isim,'UTF-8');
+
+  $isim = "Kadıköy üniversitesi";
+
+  echo mb_strtolower($isim,'UTF-8');
