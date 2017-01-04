@@ -1,0 +1,13 @@
+//0 dan 100 kadar olan sayıların 7 ile tam bölünen sayıların toplamı
+
+  $toplam = 0;
+
+  for ($i=0; $i <= 100; $i++ ) {
+
+    if ($i%7==0) {
+        $toplam = $toplam + $i;
+    }
+
+  }
+
+  echo $toplam;
