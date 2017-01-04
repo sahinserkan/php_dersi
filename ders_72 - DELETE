@@ -1,4 +1,4 @@
 //DELETE kullanımı
 
-UPDATE personel SET maas = 7000 WHERE id =2
-perseonel tablosunda id 2 olanının maşını 7000 yap
+DELETE FROM personel WHERE id =3
+//perseonel tablosunda id 3 olanını silme
