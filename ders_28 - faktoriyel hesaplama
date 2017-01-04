@@ -1,0 +1,7 @@
+//0dan 100 kadar olan sayının faktoriyeli
+
+$toplam = 0;
+  for ($i=0; $i <100; $i++) {
+    $toplam = $toplam + $i;
+  }
+  echo $toplam;
