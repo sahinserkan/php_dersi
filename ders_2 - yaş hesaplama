@@ -1,0 +1,6 @@
+// iki tarih arasındaki farkı bulma
+$dogum = 1997;
+	$bugun = 2016;
+	$yasim = $bugun-$dogum;
+	
+	echo "Ben $yasim yaşıdayım"
