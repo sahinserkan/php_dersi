@@ -1,0 +1,10 @@
+//function(toplama örneği)
+
+// fonksoyonlarda toplama işlemi
+  function hesapla($x,$y){
+    $toplam=$x+$y;
+    return $toplam;
+  }
+
+  $maas = hesapla(2,3);
+  echo $maas;
