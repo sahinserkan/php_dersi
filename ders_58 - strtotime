@@ -1,0 +1,6 @@
+//strtotime(iki tarih arasındaki geçen günü hesaplama)
+
+  $start = strtotime('1997-04-24');
+  $finish = strtotime('2016-12-13');
+
+  echo ($finish - $start)/86400;
