@@ -1,11 +1,10 @@
 //modül kullanarak if sistemi yaptık tek sayı bulma
 
-<?php
+$kullanici_adi = "admin";
+$sifre = 1234;
 
-$sayi = 98;
-$kontrol = $sayi%2;
-if ($sayi > 10 and $kontrol ==1 ) {
-echo "$sayi tek bir sayıdır. Havuza dahil edilmiştir.";
+if ($kullanici_adi == "admin" and $sifre == 1234) {
+echo "Tebrikler. yönlendiriliyorsunuz.";
+}else {
+echo "Lütfen Kullanıcı adınızı ve/veya şifrenizi kontrol ediniz";
 }
-
-?>
