@@ -1,0 +1,4 @@
+round (sayının küsüratını yuvarlama)
+
+  $y = 2.545;
+  echo round($x,2);
