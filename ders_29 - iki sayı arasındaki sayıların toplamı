@@ -1,0 +1,7 @@
+50 den 70 kadar olan sayının topla
+
+  $toplam = 0;
+  for ($i=50; $i <71; $i++) {
+    $toplam = $toplam + $i;
+  }
+  echo $toplam;
