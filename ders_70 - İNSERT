@@ -1,0 +1,4 @@
+//İNSERT kullanımı
+
+INSERT INTO personel (adi,soyadi,unvan,cinsiyet,maas) VALUES ('Harun','AKSAY',1,'E',10000)
+//Veri ekleme
