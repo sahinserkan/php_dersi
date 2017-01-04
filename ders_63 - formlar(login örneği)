@@ -1,0 +1,36 @@
+//formlar(login sistemi örneği)
+
+//index.php:
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="login.php" method="post">
+      <input type="text" name="kadi" placeholder="Kulanıcı adınız">
+      <input type="text" name="sifre" placeholder="Şifreniz">
+      <input type="submit"  value="Giriş">
+    </form>
+  </body>
+</html>
+
+//login.php:
+<?php
+
+  $kadi = $_POST["kadi"];
+  $sifre = $_POST["sifre"];
+
+  if ($kadi == "admin" and $sifre == 1234) {
+    echo "Giriş başarılı! yönetim  paneline yönlendiriliyorsunuz.";
+    header('Refresh: 5; url=anasayfa.php');
+  }else {
+    echo "Kullanıcı adınız ve/veya Şifreniz hatalı! Giriş sayfasına yönlendiriliyorsunuz.";
+    header('Refresh: 5; url=index.php');
+  }
+
+ ?>
+
+anasayfa.php:
+<?php echo "Hoş geldiniz."; ?>
