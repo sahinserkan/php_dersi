@@ -1,0 +1,41 @@
+// NOT HESAPLAMA SİSTEMİ
+
+// değişkenleri tanımlıyorum
+  $vize =100;
+  $final =100;
+  $gecme_notu =50;
+  $ortalama = ($vize+$final)/2;
+
+//100 lük sistemi sorguluyorum
+  echo "<b style='color:red;'>Açıklama: </b>";
+  if ($ortalama<0) {
+    echo "<b>UYARI! 5lik sistemdeki not 100 ile sınırlıdır ve 0'dan az not olamaz. Lütfen Kontrol ediniz.</b><br />";
+  }elseif ($ortalama<45) {
+    echo "5'lik sistemdeki notunuz: 1'dir.<br />";
+  }elseif ($ortalama<55) {
+    echo "5'lik sistemdeki notunuz: 2'dir.<br />";
+  }elseif ($ortalama<70) {
+    echo "5'lik sistemdeki notunuz: 3'dür.<br />";
+  }elseif ($ortalama<85) {
+    echo "5'lik sistemdeki notunuz: 4'tür.<br />";
+  }elseif ($ortalama<=100) {
+    echo "5'lik sistemdeki notunuz: 5'dir.<br />";
+  }else {
+    echo "<b>UYARI! 5lik sistemdeki not 100 ile sınırlıdır ve 100'den fazla not olamaz. Lütfen Kontrol ediniz.</b><br />";
+  }
+
+  echo "<b style='color:red;'>Sonuç: </b>";
+
+// geçip kaldığını sorguluyorum
+  if ($ortalama<0) {
+      echo "<b>Yazılımsal 0 bir hata mevcuttur. Lütfen dstek ekibimiz ile iletişime geçiniz.</b><br />";
+  }elseif ($ortalama>100) {
+    echo "<b>Yazılımsal 100 bir hata mevcuttur. Lütfen dstek ekibimiz ile iletişime geçiniz.</b><br />";
+  }
+  elseif ($final<$gecme_notu) {
+    echo "Final Notunuzdan Kaldınız.";
+  }elseif ($ortalama>=$gecme_notu) {
+    echo "Geçtiniz.";
+  }else{
+    echo "Kaldınız.";
+  }
