@@ -1,0 +1,5 @@
+//strlen (bir kelimeyi belli bir yerden dizilere bölme)
+
+$metin = "Kişi bilmediğinin düşmanıdır.";
+      $kelimeler = explode(" ", $metin);
+      echo $kelimeler[2];
