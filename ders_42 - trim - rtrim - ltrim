@@ -1,0 +1,15 @@
+//trim (metinin sağıdaki solundaki boşukları silme)
+//trim - rtrim - ltrim 
+
+  $metin1= "Serkan        ";
+  $metin2="            Serkan";
+  $metin3="     Serkan             ";
+
+  $metin1 = rtrim($metin1);
+  $metin2 = ltrim($metin2);
+  $metin3 = trim($metin3);
+
+
+  echo "$metin1<br />\n";
+  echo "$metin2<br />\n";
+  echo "$metin3<br />";
