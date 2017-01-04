@@ -1,0 +1,5 @@
+//dizideki eleman sayısını bulma
+
+$ogrenciler = array (10,50,65,92,37,48);
+$ogrenci_sayisi = count($ogrenciler);
+echo $ogrenci_sayisi;
