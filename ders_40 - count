@@ -1,0 +1,11 @@
+//count (metindeki kelimeleri saymak)
+
+  $hikaye = "Hava bugün çok güzel. Dondurmamı yesem?";
+
+  $kelimeler=explode(" ", $hikaye);
+  $kelime_sayisi=count($kelimeler);
+  echo "$kelime_sayisi adet kelime var.<br />";
+
+  $cumle=explode(".", $hikaye);
+  $cumle_sayisi=count($cumle);
+  echo "$cumle_sayisi adet cumle var.";
