@@ -1,0 +1,39 @@
+//iletişim formu (post metodu)
+
+//index.php :
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>login formu</title>
+  </head>
+  <body>
+    <label for=""> İletişim Formu</label>
+    <form class="" action="kontrol.php" method="post"><br><br>
+      <input type="text" name="ad" placeholder="Ad"><br><br>
+      <input type="text" name="soyad" placeholder="Soyad"><br><br>
+      <input type="text" name="mail" placeholder="E-mail"><br><br>
+      <input type="radio" name="cinsiyet" value="erkek">Erkek
+      <input type="radio" name="cinsiyet" value="kadın">Kadın <br><br>
+      <textarea name="mesaj" rows="8" cols="80">Mesajınız</textarea><br><br>
+      <input type="submit" name="" value="Göner">
+    </form>
+  </body>
+</html>
+
+//kontrol.php:
+<?php
+
+  $ad=$_POST['ad'];
+  $soyad=$_POST['soyad'];
+  $mail=$_POST['mail'];
+  $cinsiyet=$_POST['cinsiyet'];
+  $mesaj=$_POST['mesaj'];
+
+  echo "Ad:".$ad." <br>
+        Soyad:".$soyad."<br>
+        Mail:".$mail."<br>
+        Cinsiyet:".$cinsiyet."<br>
+        Mesajınız:".$mesaj;
+
+ ?>
