@@ -1,6 +1,2 @@
-<?php
-
-  // ekrana yazdırma
-  echo "serkan was here :)";
-
-?>
+// ekrana yazdırma
+echo "serkan was here :)";
