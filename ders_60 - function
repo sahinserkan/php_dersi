@@ -1,0 +1,8 @@
+//function(ekrana yazdırma örneği)
+
+  function yazdir($metin){
+    echo $metin;
+  }
+
+  $hakkinda="Serkan Web programlama Dersi alıyor";
+  yazdir ($hakkinda);
