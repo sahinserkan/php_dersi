@@ -1,0 +1,3 @@
+//time (1970’den buyana geçen saniye)
+
+  echo time();
