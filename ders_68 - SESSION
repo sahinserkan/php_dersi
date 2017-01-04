@@ -1,0 +1,4 @@
+//SESSION Kullanımı basit örnek
+
+  session_start();
+  $_SESSION['isim']= "Mehmet";
