@@ -1,0 +1,8 @@
+//while örneği
+
+$a = 0;
+
+while ($a <= 10) {
+  echo "Serkan<br />";
+  $a++;
+}
