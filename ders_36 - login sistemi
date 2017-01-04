@@ -1,0 +1,11 @@
+//login sistemi
+
+$kullanici_adi="admin";
+    $sifre=1234356;
+    $kullanici_sayisi=strlen($kullanici_adi);
+    $sifre_sayisi=strlen($sifre);
+    if ($kullanici_sayisi >=1 and $sifre_sayisi >=6 and $kullanici_adi =="admin" and $sifre == 123456) {
+     echo "giriş başarılı";
+   }else {
+     echo "Lütfen Kontrol ediniz";
+   }
