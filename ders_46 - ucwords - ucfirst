@@ -1,0 +1,6 @@
+// ucwords - ucfirst (metni büyütme ve küçültme fonksiyonları) 
+
+  $isim = "kadıköy universitesi<br />";
+
+   echo ucwords($isim);
+  echo ucfirst($isim);
