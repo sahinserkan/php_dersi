@@ -1,4 +1,17 @@
 //SESSION Kullanımı basit örnek
 
+//form:
+<?php
+
   session_start();
   $_SESSION['isim']= "Mehmet";
+
+ ?>
+
+//form kontrol:
+<?php
+
+  session_start();
+  echo $_SESSION['isim'];
+
+ ?>
