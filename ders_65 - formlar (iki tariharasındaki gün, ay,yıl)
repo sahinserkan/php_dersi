@@ -1,0 +1,52 @@
+//formlar (iki tariharasındaki gün, ay,yıl)
+
+//index.php:
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Serkan</title>
+  </head>
+  <body>
+<h1>İki tarih arasındaki zamanı hesaplama</h1><br>
+    <form class="" action="sonuc.php" method="post">
+      <label for="">Başlangıç Taihi</label>
+      <input type="text" name="tarih1" placeholder="1997-04-24">
+
+      <label for="">Bitiş Tarihi</label>
+      <input type="text" name="tarih2" placeholder="2016-04-24">
+      <input type="submit" name="hesapla" value="Hesapla">
+    </form>
+
+  </body>
+</html>
+
+
+//sonuc.php:
+<?php
+
+  $tarih1=$_POST['tarih1'];
+  $tarih2=$_POST['tarih2'];
+
+  $tarih1_str=strtotime($tarih1);
+  $tarih2_str=strtotime($tarih2);
+
+  $hesapla_yil=($tarih2_str-$tarih1_str)/31104000;
+  $hesapla_ay=($tarih2_str-$tarih1_str)/2592000;
+  $hesapla_hafta=($tarih2_str-$tarih1_str)/604800;
+  $hesapla_gün=($tarih2_str-$tarih1_str)/86400;
+  $hesapla_saat=($tarih2_str-$tarih1_str)/3600;
+  $hesapla_dakika=($tarih2_str-$tarih1_str)/60;
+  $hesapla_saniye=($tarih2_str-$tarih1_str)/1;
+
+  echo  "<h1>".$tarih1. "/" .$tarih2. " tarihleri Arasındaki;</h1><br>".
+        "Yıl Farkı: ". round($hesapla_yil). "<br>".
+        "Ay Farkı: ". round($hesapla_ay). "<br>".
+        "Hafta Farkı: ". round($hesapla_hafta). "<br>".
+        "Gün Farkı: ". round($hesapla_gün). "<br>".
+        "Saat Farkı: ". round($hesapla_saat). "<br>".
+        "Dakika Farkı: ". round($hesapla_dakika). "<br>".
+        "Saniye Farkı: ". round($hesapla_saniye). "<br>";
+
+
+ ?>
