@@ -1,0 +1,14 @@
+//elseif kullanarak gelir sistemi örneği
+
+$maas = 4589;
+if ($maas>=7000 and $maas<=1000) {
+echo "Zengin";
+}elseif ($maas>=4000 and $maas<=6999) {
+echo "Orta Gelirli";
+}elseif ($maas>=3000 and $maas<=3999) {
+echo "Orta Gelirli";
+}elseif ($maas>=1000 and $maas<=2999) {
+echo "Orta Gelirli";
+}else{
+echo "Pis fakir";
+}
