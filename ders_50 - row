@@ -1,0 +1,6 @@
+//row (üslü sayı)
+
+  $x = 2;
+  $y = 3;
+  
+  echo pow($x,$y);
