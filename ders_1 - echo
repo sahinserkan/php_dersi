@@ -1,0 +1,6 @@
+<?php
+
+  // ekrana yazdırma
+  echo "serkan was here :)";
+
+?>
