@@ -1,0 +1,10 @@
+md5  -  sha1 (şifreleme sistemi)
+
+  $parola = "Serkan44";
+  $md5 = md5($parola);
+  $sha1 = sha1($parola);
+  $guclu = sha1(md5(sha1(sha1($parola))));
+  echo "
+        Md5= $md5 <br>
+        sha1= $sha1 <br>
+        güçlü= $guclu"
