@@ -1,0 +1,7 @@
+//for ile 5 ile bölünen tek sayıları yazdırma
+
+  for ($sayi=0; $sayi <=1000 ; $sayi++) {
+  if ($sayi%2==1 and $sayi%5==0) {
+    echo "$sayi<br />";
+  }
+  }
