@@ -1,0 +1,15 @@
+//login sistemi
+
+ $kullanici_adi="a";
+    $sifre=123443556;
+    $kullanici_sayisi=strlen($kullanici_adi);
+    $sifre_sayisi=strlen($sifre);
+    if ($kullanici_sayisi>=1 and $sifre_sayisi>=6) {
+    echo "Giriş yapıldı.";
+    }
+    if ($kullanici_sayisi<1) {
+      echo "kullanıcı adınız hatalı <br />";
+    }
+    if ($sifre_sayisi<6) {
+      echo "Şifreniz hatalı <br />";
+    }
