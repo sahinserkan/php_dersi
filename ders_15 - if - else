@@ -1,0 +1,11 @@
+//matematik işlemleri
+
+$not =50.50;
+	
+	if ($not>=50)
+	{
+		echo "Geçtin";
+	}else
+		{
+		echo "Kaldınız";
+	}
