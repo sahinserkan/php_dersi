@@ -1,0 +1,42 @@
+//elseif örneği
+
+<?php
+        error_reporting (0);
+        $cinsiyet = $_POST['cinsiyet'];
+        $kilo = $_POST['kilo'];
+
+    ?>
+
+
+        <center>
+        <h1 style="color:red;"> Kilonuz İdealmi? Hemen hesaplayın.</h1><hr>
+        <form  method="post" action="form.php">
+        <select name="cinsiyet">
+        <option value="Bay" >Bay</option>
+        <option value="Bayan">Bayan</option>
+        </select>
+        <input type="text" placeholder="Kilonuz" name="kilo" />
+        <input type="submit" value="Hesapla!" />
+        </form>
+
+        <h1>
+
+    <?php
+
+            if ($cinsiyet == "Bay" and $kilo<60) {
+            echo "Zayıfsınız Bayım";
+          }elseif ($cinsiyet == "Bay" and $kilo>=60 and $kilo<=80 ) {
+            echo "ideal Kilodasınız. GOOD 😀";
+          }elseif ($cinsiyet == "Bay" and $kilo>80 ) {
+            echo "AZ YE ULEN AYI";
+            }elseif ($cinsiyet == "Bayan" and $kilo<45 ) {
+            echo "Zayıfsınız Hanımefendi";
+            }elseif ($cinsiyet == "Bayan" and $kilo>=45 and $kilo<=60 ) {
+            echo "ideal Kilodasınız. GOOD 😀";
+          }elseif ($cinsiyet == "Bayan" and $kilo>60 ){
+            echo "AZ YE ULEN GARI";
+          }
+
+    ?>
+      </h1>
+</center>
