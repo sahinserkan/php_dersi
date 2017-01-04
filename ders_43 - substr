@@ -1,0 +1,25 @@
+// substr (metindeki bir yerden kaçartane ileriye kadar seçeceğini bulma)
+
+  $tel_no = "+905369159014";
+
+  $ulke = substr($tel_no,0,3);
+  $operator = substr($tel_no,3,3);
+  $uclu_grub = substr($tel_no,6,3);
+  $bir_ikili = substr($tel_no,9,2);
+  $iki_ikili = substr($tel_no,11,2);
+
+  echo "Ülke Kodu: $ulke <br />";
+
+  if ($operator == 522 or $operator == 523) {
+    echo "Operatör: $operator (Avea)<br />";
+  }elseif ($operator == 532 or $operator == 536) {
+    echo "Operatör: $operator (Türkcell)<br />";
+  }else {
+    echo "Operatör: $operator (Vodafone)<br />";
+  }
+
+  echo "üçlü grup: $uclu_grub <br />";
+
+  echo "1. ikili grup: $bir_ikili <br />";
+
+  echo "2. ikili grup: $iki_ikili <br />";
