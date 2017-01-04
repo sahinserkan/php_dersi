@@ -1,0 +1,8 @@
+//dizideki son yere veri ekleme
+
+	$sinif = array("Svetlana","Fatih","Serkan","Harun","Burak");
+	$sinif[] = "Canan";
+	$elemansayisi = count($sinif);
+	
+	echo $sinif[0]." ".$sinif[1]." ".$sinif[2]." ".$sinif[3]." ".$sinif[4]." ".$sinif[5] ;
+	echo "<br /> <b>Sınıfta Topam $elemansayisi kişi vardır.</b>";
