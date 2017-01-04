@@ -1,0 +1,17 @@
+//elseif örneği
+
+$cinsiyet = "Kadın";
+$kilo = 50;
+if ($cinsiyet == "Erkek" and $kilo<60) {
+echo "Zayıfsınız Bayım";
+}elseif ($cinsiyet == "Erkek" and $kilo>=60 and $kilo<=80 ) {
+echo "ideal Kilodasınız. GOOD 😀";
+}elseif ($cinsiyet == "Erkek" and $kilo>80 ) {
+echo "AZ YE ULEN AYI";
+}elseif ($cinsiyet == "Kadın" and $kilo<45 ) {
+echo "Zayıfsınız Hanımefendi";
+}elseif ($cinsiyet == "Kadın" and $kilo>=45 and $kilo<=60 ) {
+echo "ideal Kilodasınız. GOOD 😀";
+}else {
+echo "AZ YE ULEN GARI";
+}
