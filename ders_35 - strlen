@@ -1,0 +1,5 @@
+//strlen (karakter sayısı hesaplama)
+
+$metin = "Serkan";
+$karaktersayisi = strlen($metin);
+echo "$metin kelimesi $karaktersayisi harften oluşamaktadır.";
