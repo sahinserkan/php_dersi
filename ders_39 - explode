@@ -1,0 +1,13 @@
+//tarihi ekrana özel biçimde yazdırma
+
+<?php
+      $tarih = "24-04-1997";
+      $bol = explode("-",$tarih);
+
+      $aylar = array ("Ocak","Şabat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık");
+      $ay = $aylar[$bol[1]-1];
+      $gun = $bol[0];
+      $yil = $bol[2];
+
+      echo "$gun.$ay.$yil";
+?>
