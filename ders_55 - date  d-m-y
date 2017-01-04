@@ -1,4 +1,4 @@
-date  d-m-y(tarih fonsyonu)
+//date  d-m-y(tarih fonsyonu)
 
   echo date('d-m-Y');
   echo "<br />";
