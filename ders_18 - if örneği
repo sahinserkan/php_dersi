@@ -1,0 +1,16 @@
+//öğrencinin iki notunu toplayıp ikiye bölüp sonucu öğrenme
+
+$gecme_notu =50;
+	$vize_notu =20;
+	$final_notu =50;
+	$ortalama_notu =($vize_notu+$final_notu)/2;
+	
+	if ($final_notu<50){
+		echo "finalden kaldınız";
+	}else{
+		if ($ortalama_notu>=$gecme_notu){
+			echo "Geçtiniz";
+		}else{
+			echo "Kaldınız";
+		}
+	}
