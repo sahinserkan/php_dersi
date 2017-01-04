@@ -32,5 +32,5 @@
 
  ?>
 
-anasayfa.php:
+// anasayfa.php:
 <?php echo "Hoş geldiniz."; ?>
