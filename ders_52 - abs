@@ -1,4 +1,4 @@
-abs (mutlak değer- 0’a olan uzaklığı hesaplama)
+//abs (mutlak değer- 0’a olan uzaklığı hesaplama)
 
   $y = 25;
   echo abs($y);
