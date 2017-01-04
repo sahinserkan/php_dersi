@@ -1,0 +1,5 @@
+//str_replace(metindeki yerleri değiştirme)
+
+  $metin="Bu sınıfın en çalışkan öğrencisi Serkan.";
+  $metin= str_replace("çalışkan","tembel",$metin);
+  echo $metin;
