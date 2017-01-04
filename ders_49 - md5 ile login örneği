@@ -1,0 +1,11 @@
+// md5 ile login örneği
+
+  $kadi="admin";
+  $password="1234";
+  $md5=md5($password);
+
+  if ($md5 == md5($password)) {
+    echo "Giriş Başarılı";
+  }else {
+    echo "Lütfen kulanıcı adınızı ve/veya Şifrenizi kontrol ediniz";
+  }
