@@ -1,0 +1,5 @@
+date  d-m-y(tarih fonsyonu)
+
+  echo date('d-m-Y');
+  echo "<br />";
+  echo date('d-m-y');
