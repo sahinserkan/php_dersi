@@ -1,0 +1,5 @@
+// dizi oluşturma yazdırma
+
+$sinif = array("Svetlana","Fatih","Serkan","Harun");
+	
+	echo $sinif[0]." ".$sinif[1]." ".$sinif[2]." ".$sinif[3];
