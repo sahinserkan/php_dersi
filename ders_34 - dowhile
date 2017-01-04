@@ -1,0 +1,7 @@
+//dowhile ile ekrana 10 kere alt alta serkan yazırma
+
+  $sayi = 10;
+  do {
+    echo "Serkan<br />";
+    $sayi++;
+  } while ($sayi <= 20);
