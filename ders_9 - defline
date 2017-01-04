@@ -1,0 +1,6 @@
+//sabit değişkenler
+
+	define ("adim","Serkan");
+	define ("soyadim","Şahin");
+	
+	echo adim." ".soyadim;
