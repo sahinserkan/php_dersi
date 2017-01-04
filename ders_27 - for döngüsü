@@ -1,0 +1,6 @@
+//for döngüsü
+
+for ($i=0; $i <100; $i++) {
+    echo "$i.Ekber was here";
+    echo "<br />";
+  }
