@@ -1,0 +1,36 @@
+//SELECT kullanımı
+
+SELECT * FROM ogrenci where dyeri= 'Adana'
+//Öğrenci tablosunda  doğum yeri adana olanları bulma
+
+SELECT adi,soyadi FROM ogrenci where dyeri= 'Adana'
+//Öğrenci tablosunda  doğum yeri adana olanların sadece adını ve soyadını yazmak
+
+SELECT adi,soyadi,ono FROM ogrenci where bid= 3
+//Çevre Mühendisliği okuyan öğrencilerinin ad,soyad,oğrenci no yazdırma
+
+SELECT adi,soyadi,dyeri FROM ogretmen where bid= 1
+bilgisayar mühendisliğinde ders veren hocalar
+SELECT COUNT(*) FROM ogretmen where dyeri = 'İstanbul'
+//D.yeri istanbul olan kaçtan öğretmen var sorusunu cevaplar.
+
+SELECT COUNT(*) FROM ogrenci where dyeri = 'İstanbul' AND cinsiyet='E'
+//D. yeri istanbul olan ve cinsiyeti erkek olan öğrencilerin sayısınmı bulma
+
+SELECT max(Population) FROM country
+//Veri tabanında poupulationu en yüksek olanı gösterme
+
+SELECT name,Continent FROM country where GovernmentForm = 'Federal Republic'
+//country tablosunda government bölümünde - federal republic geçen ülkelerin adını ve continent yazdırma
+
+SELECT Name FROM country where GovernmentForm like '%lam%'
+//country tablosunda GovernmentForm bölümünde “lam” kelimesi olanların adını yazdırma
+
+SELECT count(Name) FROM country where Continent= 'Europe'
+//evrupa kıtasındakileri sayma
+
+SELECT Name,Population,LifeExpectancy FROM country where Continent= 'Europe'
+//Avrupadaki ülkelerin adını popülasyonunu yazma
+
+SELECT sum(izin_gun_sayisi) FROM personel_izin where personel_id = 3
+//id 3 olanların izinlerini topla
