@@ -1,0 +1,11 @@
+// diziler ile bir matematik problemi örneği
+
+$soru =array("Dün 37 sayfa kitap okudum. Bugün dünden 26 sayfa fazla kitap okudum. İki günde kaç sayfa kitap okudum?",37,26);
+	$soru[] = $soru[1]+$soru[2];
+	$cevap = $soru[1]+$soru[3];
+		echo "<b>Soru:</b><br />
+			 $soru[0]<br /><br />
+			 <b>Cevap:</b><br />
+		  	 Dün okuduğum kitap sayısı: $soru[1]<br />
+			 Bugün okuduğum kitap sayısı: $soru[1]+$soru[2]=$soru[3]<br />
+			 Toplam Okuduğum sayfa sayısı: $cevap";
