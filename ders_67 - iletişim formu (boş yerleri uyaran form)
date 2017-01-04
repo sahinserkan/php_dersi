@@ -1,0 +1,60 @@
+//iletişim formu (boş yerleri uyaran form)
+
+//index.php :<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>serkan</title>
+  </head>
+  <body>
+<form  action="formkontrol.php" method="post">
+    <input type="text" name="ad" placeholder="adınız">
+    <input type="text" name="soyad" placeholder="adınız">
+    <select  name="tur">
+      <option value="0" selected>Seçiniz</option>
+      <option value="1">Talep</option>
+      <option value="2">Öneri</option>
+      <option value="3">Şikayet</option>
+    </select><br>
+    <textarea name="mesaj" rows="8" cols="80" placeholder="Mesajınız"></textarea>
+    <input type="submit"  value="GÖNDER">
+
+
+</form>
+  </body>
+</html>
+
+//formkontrol.php:
+<?php
+
+  $ad=$_POST['ad'];
+  $soyad=$_POST['soyad'];
+  $tur=$_POST['tur'];
+  $mesaj=$_POST['mesaj'];
+
+  $ad_karaktersayisi= strlen(trim($ad));
+  $soyad_karaktersayisi= strlen(trim($soyad));
+  $mesaj_karaktersayisi= strlen(trim($mesaj));
+  $hatamesaji="";
+
+
+  if ($ad_karaktersayisi == 0) {
+    $hatamesaji = "<br>Lütfen Adınızı yazınız!<br>";
+  }
+  if ($soyad_karaktersayisi == 0) {
+      $hatamesaji = $hatamesaji."<br>Lütfen Soyadınızı yazınız!<br>";
+  }
+  if ($tur == 0) {
+    $hatamesaji = $hatamesaji."<br>Lütfen Konu Türünü Seçiniz!<br>";
+  }
+  if ($mesaj_karaktersayisi == 0) {
+    $hatamesaji = $hatamesaji."<br>Lütfen Mesaj alanını doldurunuz!<br>";
+  }
+
+  if (strlen($hatamesaji) != 0) {
+    echo $hatamesaji;
+  }else {
+    echo "Mesajınız alınmıştır. En kısa sürede tarafınıza geri dönüş yapılacaktır.";
+  }
+
+ ?>
