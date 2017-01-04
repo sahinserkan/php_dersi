@@ -1,0 +1,9 @@
+// strtoupper - strtolower(metindeki bir yerden kaç tane ileriye kadar seçeceğini bulma)
+
+  $isim = "Kadikoy universitesi<br />";
+
+  echo strtoupper($isim);
+
+  $isim = "Kadikoy universitesi";
+
+  echo strtolower($isim);
