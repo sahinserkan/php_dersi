@@ -1,0 +1,7 @@
+//dizideki elemanları birleştirerek ekrana yazdırma
+
+$sepetteki_urunler = array("Kamera","Telefon","PC");
+	$satin_alinan_urunler = array("Kamera","şarj Aleti","PC");
+	$daha_once_aldiklarim = array_merge ($sepetteki_urunler,$satin_alinan_urunler);
+	
+	print_r($daha_once_aldiklarim);
