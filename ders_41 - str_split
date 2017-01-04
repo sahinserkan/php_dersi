@@ -1,0 +1,7 @@
+// str_split(metni 4er bölme)
+
+  $iban = "TR195846546548846455";
+  $grub = str_split($iban,4);
+  foreach ($grub as $grubla) {
+    echo "$grubla ";
+  }
