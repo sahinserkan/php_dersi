@@ -1,0 +1,12 @@
+//veri tabanı bağlantısı
+
+$baglanti = @mysql_connect('localhost', 'root', '');
+$veritabani = @mysql_select_db('ariyazilim');
+
+if($baglanti && $veritabani) {
+   echo 'Bağlantı kuruldu.';
+} else {
+   echo 'Bağlantı kurulamadı.';
+}
+
+mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık.
