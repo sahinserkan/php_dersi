@@ -1,0 +1,25 @@
+//veritabanından veri çekme + veritabanı bağlantısı
+
+$baglanti = @mysql_connect('localhost', 'root', '');
+$veritabani = @mysql_select_db('ariyazilim');
+mysql_query("SET NAMES UTF8");
+
+if($baglanti && $veritabani) {
+   $sql = "SELECT * FROM personel";
+   $sorgu = mysql_query($sql);
+   while ($sonuc = mysql_fetch_array($sorgu)) {
+     echo "Personel No:".$sonuc['id'];
+     echo "<br>";
+     echo "Personel Adı:".$sonuc['adi']."Personel Soyadı:".$sonuc['soyadi'];
+     echo "<br>";
+     echo "Personel Cinsiyet:".$sonuc['cinsiyet'];
+     echo "<br>";
+     echo "Personel Maaş:".$sonuc['maas'];
+     echo "<br>";
+     echo "<hr>";
+   }
+} else {
+   echo 'Bağlantı kurulamadı.';
+}
+
+mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
