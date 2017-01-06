@@ -1,0 +1,88 @@
+// veri tabanındaki taploya veri ekleme
+
+//ayar.php:
+<?php
+$baglanti = @mysql_connect('localhost', 'root', '');
+$veritabani = @mysql_select_db('ariyazilim');
+mysql_query("SET NAMES UTF8");
+
+if($baglanti && $veritabani) {
+   $sql = "SELECT * FROM personel";
+
+   $sorgu = mysql_query($sql);
+   while ($sonuc = mysql_fetch_array($sorgu)) {
+     echo "Personel No:".$sonuc['id'];
+     echo "<br>";
+     echo "Personel Adı:".$sonuc['adi']."Personel Soyadı:".$sonuc['soyadi'];
+     echo "<br>";
+     echo "Personel Cinsiyet:".$sonuc['cinsiyet'];
+     echo "<br>";
+     echo "Personel Maaş:".$sonuc['maas'];
+     echo "<br>";
+     echo "<hr>";
+   }
+} else {
+   echo 'Bağlantı kurulamadı.';
+}
+
+mysql_close($baglanti); // MYSQL sunucusu ile bağlantımızı koparttık
+?>
+
+//form.php
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yeni Personel</title>
+  </head>
+  <body>
+    <form class="" action="form_kontrol.php" method="post">
+
+      <label for="">Adı:</label>
+      <input type="text" name="adi" placeholder="Adınız"><br><br>
+      <label for="">Soyadı:</label>
+      <input type="text" name="soyadi" placeholder="Soyadınız"><br><br>
+      <label for="">Ünvan:</label>
+      <select class="" name="unvan">
+        <option value="0">Seçiniz</option>
+        <option value="1">CEO</option>
+        <option value="2">Yazılımcı</option>
+        <option value="3">Web Master</option>
+      </select><br><br>
+        <label for="">Cinsiyetiniz:</label>
+      <select class="" name="cinsiyet">
+        <option value="0">Seçiniz</option>
+        <option value="E">Erkek</option>
+        <option value="B">Bayan</option>
+      </select><br><br>
+      <label for="">Maaş:</label>
+      <input type="text" name="maas" placeholder="Maaşınız"><br><br>
+
+      <label for="">İzin:</label>
+      <input type="text" name="izin" placeholder="İzin"><br><br>
+
+      <input type="submit" name="" value="Kaydet">
+
+    </form>
+
+  </body>
+</html>
+
+//form_kontrol.php:
+<?php
+
+$baglanti = @mysql_connect('localhost', 'root', '');
+$veritabani = @mysql_select_db('ariyazilim');
+mysql_query("SET NAMES UTF8");
+if($baglanti && $veritabani) {
+   $sql = "insert into personel (adi,soyadi,unvan,cinsiyet,maas,izin_gun_sayisi)
+   values ('".$_POST['adi']."','".$_POST['soyadi']."','".$_POST['unvan']."','".$_POST['cinsiyet']."','".$_POST['maas']."','".$_POST['izin']."')";
+   if (mysql_query($sql)) {
+     echo "Kişi başarıyla eklendi";
+     header('Refresh: 5; url=ayar.php');
+   }
+   }else {
+   echo 'Üzhünüz bir hata oluştu.';
+   header('Refresh: 5; url=form.php');
+}
+
+ ?>
